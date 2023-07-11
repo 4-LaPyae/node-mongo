@@ -23,4 +23,4 @@ const routes = glob.sync(__dirname + "/router/*.js");
 routes.forEach((item) => {
     require(item).default(app);
 });
-app.listen(3000, () => console.log("Server running on 3000"));
+app.listen(4001, () => console.log("Server running on 3000"));
