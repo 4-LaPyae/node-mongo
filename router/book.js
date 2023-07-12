@@ -6,5 +6,5 @@ router.route(`${basePath}`).get(index).post(store);
 router.route(`${basePath}/:id`).put(update).delete(destroy);
 
 exports.default = (app) => {
-    app.use(router);
+    app.use("/api", router);
 };

@@ -6,5 +6,5 @@ router.post(`${basePath}/register`, register);
 router.post(`${basePath}/login`, login);
 
 exports.default = (app) => {
-    app.use(router);
+    app.use("/api", router);
 };
