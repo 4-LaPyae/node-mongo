@@ -13,6 +13,7 @@ const checkToken = (req, res, next) => {
             res.status(200).json({
                 error: true,
                 message: "no token",
+                path: req.path,
             });
             return;
         }
