@@ -1,6 +1,7 @@
 const jwt = require("jsonwebtoken");
 const User = require("../model/user");
 const checkToken = (req, res, next) => {
+    console.log(req.path);
     const whileList = ["/api/user/login", "/api/user/register"];
     let check = whileList.includes(req.path);
     if (check) {
